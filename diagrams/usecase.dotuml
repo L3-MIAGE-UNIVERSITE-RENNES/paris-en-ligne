@@ -1,0 +1,17 @@
+UseCaseDiagram [frame=true framecolor=steelblue label="Usecase Diagram"] {
+  attribute usecase [fillcolor=paleturquoise]
+  actor a as "Parieur"
+  actor c as "Bookmaker"
+  system s as "System" [fillcolor=whitesmoke] {
+    usecase u1 as "S'Authentifier" 
+    usecase u2 as "Parametrer les evenements" 
+    usecase u5 as "Afficher les evenements"
+    usecase u3 as "Placer un paris" 
+    usecase u4 as "S'authentifier"
+  }
+  c  -- u1
+  c  -- u2
+  a  -- u3
+  a  -- u4
+  a  -- u5
+}

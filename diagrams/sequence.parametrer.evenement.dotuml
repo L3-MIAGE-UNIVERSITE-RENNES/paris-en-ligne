@@ -1,0 +1,21 @@
+SequenceDiagram [frame=true framecolor=steelblue label="Sequence Diagram"] {
+  actor bookmaker
+  lifeline "Systeme" as web
+    bookmaker --> web "demande la liste des évènements"
+   activate web
+   bookmaker <-r- web "retourne la liste des évènements"
+   bookmaker --> web "sélectionne un évènement"
+   bookmaker <-r- web "renvoye l'évènement"
+   bookmaker --> web "configure les paramètres"
+   bookmaker --> web "soumet les modifications"
+   web --> web "enregistre la configuration de l'évènement"
+  fragment alt "[configuration valide]" {
+     activate web
+  bookmaker <-r- web "confirmation de la configuration"
+
+  case "[configuration invalide]"
+    activate web
+   bookmaker <-r- web "message d'erreur (configuration invalide)"
+  	deactivate web
+  }
+}

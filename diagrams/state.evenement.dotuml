@@ -1,0 +1,13 @@
+StateDiagram [frame=true framecolor=steelblue label="State Diagram" splines=ortho] {
+  state AVenir
+  state EnCours
+	state Terminé
+  state Annuler
+  initialState-> AVenir 
+  AVenir -> EnCours "Débuter l'évènement"
+  AVenir -> Annuler "Annuler l'évènement"
+  EnCours -> Terminé "Terminé l'évènement"
+  EnCours -> Annuler "Annuler l'évènement"
+  Annuler ->finalstate "Evènement terminé"
+  Terminé ->finalstate "Evènement terminé"
+}

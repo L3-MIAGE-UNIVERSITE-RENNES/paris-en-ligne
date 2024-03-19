@@ -1,0 +1,60 @@
+ClassDiagram [frame=true framecolor=steelblue label="Class Diagram"] {
+ class Parieur {
+  private Identifiant : string
+  private nom : string
+  private email : string
+  private motDePasse : string
+  private jeton : int
+  public consulterPari()
+  public consulterPariHistorique()
+  public parier()
+  public login(email: string, motDePasse:string)
+  public logout()
+ }
+ class Pari {
+  private identifiant : string
+  private montant : int
+  private resultat : string
+  public annuler()
+  public afficher()
+ }
+ class Evenement {
+  private identifiant : string
+  private cote : float
+  private score : string
+  private date : DateTime
+  public parametrer()
+  public ajouter()
+  public consulter()
+ }
+  class Sport {
+  private identifiant : string
+  private matchNull : boolean
+  }
+  class PariSimple {
+  private identifiant : string
+  private issue : string
+  }
+  class PariAvance {
+      private identifiant : string
+  }
+  class TypePariAvance {
+    private identifiant : string
+    private label: string
+    private description : string
+  }
+  class Bookmaker {
+    private identifiant : string
+  }
+  class Option {
+    private identifiant : string
+  }
+  Pari "1"--"1..*" Parieur;
+  Pari "0..*"--"1" Evenement;
+  Evenement "0..*"--"1"  Sport;
+  Bookmaker "1"--"1..*" Evenement;
+  Option "1..*"--"1..*" Sport;
+  TypePariAvance "1"--"0..*" PariAvance;
+  Pari <-g- PariSimple;
+  Pari <-g- PariAvance
+}

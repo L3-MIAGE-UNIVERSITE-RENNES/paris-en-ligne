@@ -1,0 +1,23 @@
+SequenceDiagram [frame=true framecolor=steelblue label="Sequence Diagram"] {
+  actor  parieur
+  lifeline "Système" as web
+  parieur --> web "demande la liste des évènements"
+  activate web
+  parieur <-r- web "retourne la liste des évènements"
+  parieur --> web "sélectionne un évènement"
+  parieur --> web "choisit le type de pari (simple ou avancé)"
+  parieur --> web "saisit le montant du pari"
+  parieur --> web "soumet le ticket"
+   web --> web "vérifie les jetons du parieur"
+  fragment alt "[jetons suffisants]" {
+     activate web
+     web --> web "debite le compte du parieur"
+     web --> web "enregistre le pari"
+    parieur <-r- web "accusé de reception du pari"
+
+  case "[jetons insuffisants]"
+   parieur <-r- web "message d'erreur (insuffisance du jetons)"
+  	deactivate web
+  }
+}
+

@@ -1,0 +1,17 @@
+StateDiagram [frame=true framecolor=steelblue label="State Diagram" splines=ortho] {
+  state EnAttente
+  state EnCours
+	state Terminé
+  state gagné
+  state perdu
+  choice choix
+  initialState->EnAttente "PlacerPari"
+  EnAttente -> EnCours "Débuter l'évènement"
+  EnCours -> Terminé "Terminé l'évènement"
+  Terminé -> choix "calculer gains"
+  choix-> perdu 
+  choix->gagné
+ 
+  gagné-> finalstate "créditer le gains"
+  perdu -> finalstate "debiter la mise"
+}
