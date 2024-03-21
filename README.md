@@ -11,6 +11,7 @@ Ce projet présente une modélisation UML détaillée pour un système de paris 
 - [Le diagramme d'etats](#le-diagramme-détat)
 - [Prototype avec OpenXava](#prototype-avec-openxava)
 - [Démonstration du Prototype](#démonstration-du-prototype)
+- [Credis](#credits)
 
 ## Les Acteurs
 Notre système comprend deux acteurs principaux : le parieur et le bookmaker, ainsi qu'un acteur secondaire, le "système tiers". Cependant, dans la suite de notre diagramme de cas d'utilisation, nous avons mis l'accent sur les acteurs principaux.
@@ -49,3 +50,7 @@ Script : https://github.com/L3-MIAGE-UNIVERSITE-RENNES/paris-en-ligne/blob/main/
 
 ## Démonstration du Prototype
 video : https://drive.google.com/file/d/1DiKNCTO5Hs18S3exE52T_V7hQIq_EHSF/view?usp=sharing
+
+## Credits
+- TRO EMMANUEL
+- DIENG YAMA
