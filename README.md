@@ -31,7 +31,7 @@ Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer to
 ![Diagramme d'État](diagrams/sequence_pari.png)
 
 ### Configurer un evenement
-![Diagramme d'État](diagrams/sequence_event.png)
+![Diagramme d'État](diagrams/sequence_params.png)
 
 
 ## Le Diagramme d'État
