@@ -6,9 +6,9 @@ Ce projet présente une modélisation UML détaillée pour un système de paris 
 ## Table des Matières
 - [Les acteurs](#les-acteurs)
 - [Le diagramme de cas d'utilisation](#le-diagramme-de-cas-dutilisation)
-- [Le diagramme de casses](#le-diagramme-de-classes)
-- [Le diagramme de séquence](#le-diagramme-de-séquence)
-- [Le diagramme d'etat](#le-diagramme-détat)
+- [Le diagramme de classes](#le-diagramme-de-classes)
+- [Le diagramme de séquences](#le-diagramme-de-séquence)
+- [Le diagramme d'etats](#le-diagramme-détat)
 - [Prototype avec OpenXava](#prototype-avec-openxava)
 - [Démonstration du Prototype](#démonstration-du-prototype)
 
@@ -44,6 +44,8 @@ Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer to
 
 ## Prototype avec OpenXava
 Nous avons utilisé OpenXava pour mettre en place un prototype de notre application. Pour générer les classes nécessaires à nos modèles OpenXava, nous avons développé un générateur de code qui transcrit notre code dotUML en un code Java exécutable sur OpenXava. Le générateur de code a été écrit en Python et se situe dans le dossier "generator" à la racine du projet. Il est à noter que le générateur n'est efficace qu'à 70%, ce qui nécessite des modifications manuelles pour parfaire nos classes.
+
+Script : https://github.com/L3-MIAGE-UNIVERSITE-RENNES/paris-en-ligne/blob/main/generator/generator.py
 
 ## Démonstration du Prototype
 La démonstration du prototype illustre comment les utilisateurs interagissent avec le système. Elle peut inclure des captures d'écran ou des vidéos montrant les fonctionnalités clés du système.
