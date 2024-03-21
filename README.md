@@ -31,8 +31,12 @@ Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer to
 ### Placer un pari
 ![Diagramme d'État](diagrams/sequence_pari.png)
 
+Ce diagramme de séquence décrit l'interaction entre un parieur et le systeme pour placer un pari. Il suit le flux d'actions depuis la demande de la liste des événements jusqu'à la soumission du ticket de pari, en passant par la sélection de l'événement, le choix du type de pari (simple ou avancé), la saisie du montant du pari et la vérification des jetons du parieur. Il inclut également deux cas alternatifs : l'un pour des jetons suffisants, où le système débite le compte du parieur et enregistre le pari, et l'autre pour des jetons insuffisants, où le système renvoie un message d'erreur indiquant l'insuffisance de jetons.
+
 ### Configurer un evenement
 ![Diagramme d'État](diagrams/sequence_params.png)
+
+Ce diagramme de séquence décrit l'interaction entre un bookmaker et le système. Il suit le flux d'actions à travers différentes étapes telles que la demande de la liste des événements, la sélection d'un événement, la configuration des paramètres et la soumission des modifications. De plus, il inclut deux cas alternatifs : l'un pour une configuration valide, où le système confirme la configuration, et l'autre pour une configuration invalide, où le système renvoie un message d'erreur. 
 
 
 ## Le Diagramme d'État
