@@ -1,7 +1,7 @@
 # Modélisation UML - Paris Sportif
 
 ## Description
-Ce projet présente une modélisation UML détaillée pour un système de gestion de projets. Il inclut des diagrammes pour illustrer les interactions entre les acteurs, les cas d'utilisation, les séquences d'événements et les états des objets. De plus, il présente un prototype développé avec OpenXava pour démontrer la mise en œuvre de la modélisation.
+Ce projet présente une modélisation UML détaillée pour un système de paris sportif. Il inclut des diagrammes pour illustrer les interactions entre les acteurs, les cas d'utilisation, les clasess, les séquences d'événements et les états des objets. De plus, il présente un prototype développé avec OpenXava pour démontrer la mise en œuvre de la modélisation.
 
 ## Table des Matières
 - [Les acteurs](#les-acteurs)
@@ -43,7 +43,7 @@ Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer to
 ![Diagramme d'État](diagrams/state_event.png)
 
 ## Prototype avec OpenXava
-OpenXava est utilisé pour développer rapidement des applications web. Il fournit un cadre pour la modélisation des données et la génération de l'interface utilisateur.
+Nous avons utilisé OpenXava pour mettre en place un prototype de notre application. Pour générer les classes nécessaires à nos modèles OpenXava, nous avons développé un générateur de code qui transcrit notre code dotUML en un code Java exécutable sur OpenXava. Le générateur de code a été écrit en Python et se situe dans le dossier "generator" à la racine du projet. Il est à noter que le générateur n'est efficace qu'à 70%, ce qui nécessite des modifications manuelles pour parfaire nos classes.
 
 ## Démonstration du Prototype
 La démonstration du prototype illustre comment les utilisateurs interagissent avec le système. Elle peut inclure des captures d'écran ou des vidéos montrant les fonctionnalités clés du système.
