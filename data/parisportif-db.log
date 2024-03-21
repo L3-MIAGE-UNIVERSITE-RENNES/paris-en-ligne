@@ -1,15 +1,9 @@
-/*C1*/SET SCHEMA SYSTEM_LOBS
-INSERT INTO BLOCKS VALUES(0,2147483647,0)
-COMMIT
-/*C2*/SET SCHEMA PUBLIC
+/*C4*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C3*/SET SCHEMA PUBLIC
-create table evenement (id varchar(32) not null, cote float not null, date date, label varchar(255), score varchar(255), primary key (id))
-create table IMAGES (ID varchar(32) not null, GALLERY varchar(32), image varbinary(16777216), primary key (ID))
-create table OXDISCUSSIONCOMMENTS (id varchar(32) not null, comment clob(16777216), discussionId varchar(32), time timestamp, userName varchar(30), primary key (id))
-create table Pari (id varchar(32) not null, montant integer not null, primary key (id))
-create table Parieur (id varchar(32) not null, email varchar(255), jeton integer not null, motDePasse varchar(255), nom varchar(255), primary key (id))
-create table YourFirstEntity (id varchar(32) not null, amount numeric(19,2), date date, description varchar(50), primary key (id))
-create index IDXbhlx4vunn24ym1tbrlgq8g30m on OXDISCUSSIONCOMMENTS (discussionId)
-INSERT INTO PARIEUR VALUES('14bcced08e576ea0018e57703d4b0000','trohkopeemmanuel@gmail.com',2000,'1235','tro')
+/*C5*/SET SCHEMA PUBLIC
+alter table evenement add column sport_id varchar(32)
+alter table evenement add constraint FKp1qu8ldtj6mexrr5y73r5ha28 foreign key (sport_id) references Sport
+INSERT INTO EVENEMENT VALUES('14bcced08e57d3a7018e57d45c450000',3.0E0,'2024-03-12',NULL,'-','FRANCE - ALLEMAGNE','14bcced08e57cf9c018e57cfd6940000')
+COMMIT
+INSERT INTO PARI VALUES('14bcced08e57d3a7018e57d9ecfd0001',2000,'win','14bcced08e576ea0018e57703d4b0000',NULL,'14bcced08e57d3a7018e57d45c450000')
 COMMIT
