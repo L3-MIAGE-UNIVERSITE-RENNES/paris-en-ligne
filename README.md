@@ -9,7 +9,7 @@ Ce projet présente une modélisation UML détaillée pour un système de paris 
 - [Le diagramme de classes](#le-diagramme-de-classes)
 - [Le diagramme de séquences](#le-diagramme-de-séquence)
 - [Le diagramme d'etats](#le-diagramme-détat)
-- [Prototype avec OpenXava](#prototype-avec-openxava)
+- [Le generateur de code](#le-generateur-de-code)
 - [Démonstration du Prototype](#démonstration-du-prototype)
 - [Credits](#credits)
 
@@ -51,7 +51,7 @@ Ce diagramme d'états modélise le processus de paris, avec des états tels que 
 
 Ce diagramme d'états modélise le cycle de vie d'un événement, passant par les états "À Venir", "En Cours", "Terminé" et "Annulé". Les transitions décrivent les actions telles que le démarrage, la fin et l'annulation de l'événement, permettant une visualisation claire et concise de son déroulement. Le choix des états et des transitions est logique et facilite la compréhension des différentes phases de l'événement.
 
-## Prototype avec OpenXava
+## Le generateur de code
 Nous avons utilisé OpenXava pour mettre en place un prototype de notre application. Pour générer les classes nécessaires à nos modèles OpenXava, nous avons développé un générateur de code qui transcrit notre code dotUML en un code Java exécutable sur OpenXava. Le générateur de code a été écrit en Python et se situe dans le dossier "generator" à la racine du projet. Il est à noter que le générateur n'est efficace qu'à 70%, ce qui nécessite des modifications manuelles pour parfaire nos classes.
 
 Script : https://github.com/L3-MIAGE-UNIVERSITE-RENNES/paris-en-ligne/blob/main/generator/generator.py
