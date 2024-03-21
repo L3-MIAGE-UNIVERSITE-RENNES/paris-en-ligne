@@ -48,4 +48,4 @@ Nous avons utilisé OpenXava pour mettre en place un prototype de notre applicat
 Script : https://github.com/L3-MIAGE-UNIVERSITE-RENNES/paris-en-ligne/blob/main/generator/generator.py
 
 ## Démonstration du Prototype
-La démonstration du prototype illustre comment les utilisateurs interagissent avec le système. Elle peut inclure des captures d'écran ou des vidéos montrant les fonctionnalités clés du système.
+video : https://drive.google.com/file/d/1DiKNCTO5Hs18S3exE52T_V7hQIq_EHSF/view?usp=sharing
