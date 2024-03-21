@@ -13,20 +13,19 @@ Ce projet présente une modélisation UML détaillée pour un système de gestio
 - [Démonstration du Prototype](#démonstration-du-prototype)
 
 ## Les Acteurs
-Les acteurs sont les utilisateurs ou les systèmes externes qui interagissent avec notre système. Ils peuvent être des personnes, des organisations ou des systèmes externes qui produisent ou consomment des données.
+Notre système comprend deux acteurs principaux : le parieur et le bookmaker, ainsi qu'un acteur secondaire, le "système tiers". Cependant, dans la suite de notre diagramme de cas d'utilisation, nous avons mis l'accent sur les acteurs principaux.
 
 ## Le Diagramme de Cas d'Utilisation
-Le diagramme de cas d'utilisation est un outil UML qui permet de visualiser les interactions entre les acteurs et le système. Il fournit une vue d'ensemble des scénarios dans lesquels le système ou l'application interagit avec des personnes, des organisations ou des systèmes externes.
 
 ![Diagramme de cas d'utilisation](diagrams/usecase.png)
 
 ## Le diagramme de classes
-Le diagramme de cas d'utilisation est un outil UML qui permet de visualiser les interactions entre les acteurs et le système. Il fournit une vue d'ensemble des scénarios dans lesquels le système ou l'application interagit avec des personnes, des organisations ou des systèmes externes.
+Notre diagramme de classe comprend un total de 9 classes, dont deux (pari simple et pari avancé) qui héritent de la classe parente "pari".
 
 ![Diagramme d'État](diagrams/class.png)
 
 ## Le Diagramme de Séquence
-Le diagramme de séquence illustre comment les messages sont échangés entre les objets dans un système. Il montre les interactions entre les acteurs et les objets dans un ordre séquentiel.
+Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer tous les cas alternatifs possibles.
 
 ### Placer un pari
 ![Diagramme d'État](diagrams/state_pari.png)
@@ -36,7 +35,6 @@ Le diagramme de séquence illustre comment les messages sont échangés entre le
 
 
 ## Le Diagramme d'État
-Le diagramme d'état représente les différents états d'un objet et les transitions entre ces états. Il est utile pour modéliser le comportement d'un objet au fil du temps.
 
 ### Paris
 ![Diagramme d'État](diagrams/state_pari.png)
