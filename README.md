@@ -28,10 +28,10 @@ Notre diagramme de classe comprend un total de 9 classes, dont deux (pari simple
 Nous avons modélisé deux diagrammes de séquence en nous assurant de gérer tous les cas alternatifs possibles.
 
 ### Placer un pari
-![Diagramme d'État](diagrams/state_pari.png)
+![Diagramme d'État](diagrams/sequence_pari.png)
 
 ### Configurer un evenement
-![Diagramme d'État](diagrams/state_event.png)
+![Diagramme d'État](diagrams/sequence_event.png)
 
 
 ## Le Diagramme d'État
